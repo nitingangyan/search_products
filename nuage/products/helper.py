@@ -45,6 +45,7 @@ def save_data(data_list):
             prod.image = item["image"]
             prod.url = item["url"]
             prod.price = item["price"]
+            prod.save()
         except Exception as ex:
             Products(
                 product_id=item["product_id"],
